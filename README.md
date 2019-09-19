@@ -2,7 +2,7 @@
 
 Commands:
 
-cd <location>
+**cd <location>**
   
 Change current directory
 
