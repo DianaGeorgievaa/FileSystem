@@ -32,7 +32,7 @@ Lists the files in the current directory in ascending/descending order, sorted b
 
 wc 
 
-Counts number of words and lines in the given file
+Counts number of words and lines
 
 wc <file_name>
 
