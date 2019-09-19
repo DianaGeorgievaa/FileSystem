@@ -1,7 +1,6 @@
 # FileSystem
 
 ## Commands:
-------
 
 **cd <new_location>**
   
