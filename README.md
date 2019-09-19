@@ -68,6 +68,6 @@ Removes from file lines from the first one inclusively to the second one exclusi
 
 Implemented pipeline functionality - an output of a command to be the input of the next
 
-Virtual and real file system
+**Virtual and real file system**
 
 Two file system implementations are supported - real and virtual. The user can choose one of them.
