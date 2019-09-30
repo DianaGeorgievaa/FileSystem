@@ -56,20 +56,13 @@ public class Terminal {
 			String input = inputScanner.nextLine();
 			String commandName = parser.getCommand(input);
 			Command currentCommand = commandFactory.getCommand(commandName);
-			List<String> currentCommandArguments = currentCommand.getArguments(input);
 			try {
-				String result = currentCommand.executeCommand(currentCommandArguments);
+				String result = currentCommand.execute(input);
 				System.out.println(result);
-			} catch (ExistanceException e) {
-				System.out.println(e.getMessage());
-			} catch (NotEnoughMemoryException e) {
-				System.out.println(e.getMessage());
-			} catch (InvalidArgumentException e) {
-				System.out.println(e.getMessage());
-			} catch (IOException e) {
-				System.out.println(e.getMessage());
+			} catch (ExistanceException|InvalidArgumentException|NotEnoughMemoryException|IOException e) {
+				System.out.println( e.getMessage());
 			}
-		}
+		} 
 		inputScanner.close();
 	}
 }
